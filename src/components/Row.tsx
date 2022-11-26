@@ -53,7 +53,7 @@ export const Row = ({ title, fetchUrl, isLargeRow }: Props) => {
       setTrailerUrl("");
     } else {
       let trailerurl = await axios.get(
-        `/movie/${movie.id}/videos?api_key=30283d0faeef8cc41508d902d63abd9e`
+        `/movie/${movie.id}/videos?api_key=${process.env.REACT_APP_API_KEY}`
       );
       setTrailerUrl(trailerurl.data.results[0]?.key);
     }
