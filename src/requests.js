@@ -1,8 +1,8 @@
 const API_KEY = "30283d0faeef8cc41508d902d63abd9e";
 
-export const request = {
+export const requests = {
   feachTrending: `/trending/all/week?api_key${API_KEY}&language=en-us`,
-  feachNetflixOriginals: `/discover/tv?api_ley=${API_KEY}&with_networks=213`,
+  feachNetflixOriginals: `/discover/tv?api_key=${API_KEY}&with_networks=213`,
   feactTopRated: `/discover/tv?api_key=${API_KEY}&languager=en-us`,
   feactActionMovies: `/discover/tv?api_key=${API_KEY}&with_genres=28`,
   feactComedyMovies: `/discover/tv?api_key=${API_KEY}&with_genres=35`,
